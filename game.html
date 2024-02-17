@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bulma-slider@2.0.4/dist/js/bulma-slider.min.js" type="module"></script>
+    <script src="src/main.js" type="module"></script>
+    <script src="src/move-history.js" type="module"></script>
+    <script src="src/footer.js" type="module"></script>
+    <script src="src/navbar.js" type="module"></script>
+  </head>
+  <body>
+    <custom-navbar></custom-navbar>
+
+    <div class="con">
+      <div class="game">
+        <canvas>this browser does not support canvas</canvas>
+        <move-history></move-history>
+      </div>
+      <div class="controls">
+        <button id="resetBoard" class="button">reset board</button>
+        <button id="toggleEasyBot" class="button">turn on bot</button>
+        <label class="radio">
+          <input id="easierBotRadio" type="radio" class="radio" name="botlevel" checked />
+          easier bot
+        </label>
+        <label class="radio">
+          <input id="easyBotRadio" type="radio" class="radio" name="botlevel" />
+          easy bot
+        </label>
+        <button id="setTime" class="button">set timer</button>
+        <input id="timeSlider" class="slider is-fullwidth" step="1" min="0" max="100" value="33" type="range" />
+        <output id="timeSliderOutput">05:00</output>
+      </div>
+    </div>
+
+    <custom-footer data-title="Ultimate Tic Tac Toe"></custom-footer>
+  </body>
+</html>

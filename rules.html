@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script src="src/footer.js" type="module"></script>
+    <script src="src/navbar.js" type="module"></script>
+  </head>
+  <body>
+    <custom-navbar></custom-navbar>
+
+    <div class="container content">
+      <h1 class="title">how to play</h1>
+
+      <h3 class="title">the board</h3>
+      <ul>
+        <li>in ultimate tic tac toe there are 9 small tic tac toe boards and 1 large tic tac toe board</li>
+        <li>the large tic tac toe board is made up of the 9 small ones</li>
+        <li>to win a player has to win 3 of the small tic tac toe boards in a row, column, or diagonal</li>
+      </ul>
+
+      <h3 class="title">moving</h3>
+      <ul>
+        <li>where a player can move in a turn is dictated by where the player in the last turn moved</li>
+        <li>
+          the player whose turn it is must move in the tic tac toe board in the same position on the large board as the position on the small board
+          where the last move was made
+        </li>
+        <li>
+          if we call each small tic tac toe board A-I and each square in a small tic tac toe board 1-9 then if player 1 moves in E-1, player 2 will
+          have to move in A
+        </li>
+        <img src="images/board_e-1.png" class="image" width="256" />
+        <li>if player 2 then moves in A-3, player 1 will have to move in C</li>
+        <img src="images/board_e-1_a-3.png" class="image" width="256" />
+        <li>if a player takes a small board the next player can move anywhere, they are not restricted by the rule above</li>
+        <img src="images/board_e.png" class="image" width="256" />
+        <li>if the previous move would force the current player to move in a small board that is taken they can also move anywhere</li>
+        <img src="images/board_e_h-5.png" class="image" width="256" />
+      </ul>
+
+      <h3 class="title">example game</h3>
+      <img src="images/full_game.gif" />
+    </div>
+
+    <custom-footer data-title="Ultimate Tic Tac Toe"></custom-footer>
+  </body>
+</html>

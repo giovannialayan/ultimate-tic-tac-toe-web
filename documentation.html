@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="src/navbar.js" type="module"></script>
+    <script src="src/footer.js" type="module"></script>
+  </head>
+  <body>
+    <custom-navbar></custom-navbar>
+
+    <!-- title -->
+    <p class="title ml-5 mt-2">Ultimate Tic Tac Toe</p>
+
+    <!-- project requirements -->
+    <div class="content ml-5">
+      <p class="is-size-4 has-text-weight-bold">project requirements</p>
+      <ul>
+        <li>
+          <a href="https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/project-3.md">
+            https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/project-3.md
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- resources utilized -->
+    <div class="content ml-5">
+      <p class="is-size-4 has-text-weight-bold">resources utilized</p>
+      <ul>
+        <li>
+          <a href="https://bulma.io/documentation/"> https://bulma.io/documentation/ </a>
+        </li>
+        <li>
+          <a href="https://wikiki.github.io/form/slider/"> https://wikiki.github.io/form/slider/ </a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/"> https://www.w3schools.com/ </a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web"> https://developer.mozilla.org/en-US/docs/Web </a>
+        </li>
+        <li>
+          <a href="https://fonts.google.com/specimen/Mallanna?category=Sans+Serif">
+            https://fonts.google.com/specimen/Mallanna?category=Sans+Serif
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/questions/1322732/convert-seconds-to-hh-mm-ss-with-javascript">
+            https://stackoverflow.com/questions/1322732/convert-seconds-to-hh-mm-ss-with-javascript
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/questions/32539354/how-to-get-the-first-element-of-set-in-es6-ecmascript-2015">
+            https://stackoverflow.com/questions/32539354/how-to-get-the-first-element-of-set-in-es6-ecmascript-2015
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/questions/1056316/algorithm-for-determining-tic-tac-toe-game-over">
+            https://stackoverflow.com/questions/1056316/algorithm-for-determining-tic-tac-toe-game-over
+          </a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/questions/195262/can-i-turn-off-antialiasing-on-an-html-canvas-element">
+            https://stackoverflow.com/questions/195262/can-i-turn-off-antialiasing-on-an-html-canvas-element
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- noteworthy -->
+    <div class="content ml-5">
+      <p class="is-size-4 has-text-weight-bold">noteworthy</p>
+      <ul>
+        <li>
+          mobile friendly:
+          <ul>
+            <li>uses bulma which is designed to be mobile friendly first</li>
+          </ul>
+        </li>
+        <li>
+          code:
+          <ul>
+            <li>all js code is contained within seperate scripts that are ES6 modules</li>
+            <li>uses web components to create html elements used between pages</li>
+            <li>used math to get board positions rather than hard coding positions</li>
+          </ul>
+        </li>
+        <li>
+          user experience:
+          <ul>
+            <li>shows player where their next move should be if they click in the wrong small board</li>
+            <li>used bulma slider for time selection</li>
+            <li>used radio buttons for bot difficulty</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- grading -->
+    <div class="content ml-5">
+      <p class="is-size-4 has-text-weight-bold">grading</p>
+      <ul>
+        <li>
+          requirements met
+          <ul>
+            <li>load json data via fetch</li>
+            <li>embedded font</li>
+            <li>3 web components</li>
+            <li>3 controls on app page</li>
+            <li>using bulma</li>
+          </ul>
+        </li>
+        <li>
+          beyond class
+          <ul>
+            <li>created a game more complex than what we have made in class</li>
+            <li>created functions to translate between column,row and sector,tile</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- todo -->
+    <div class="content ml-5">
+      <p class="is-size-4 has-text-weight-bold">to do</p>
+      <p>game:</p>
+      <ul>
+        <li>improve styling of controls</li>
+        <li>change move history so every 10 it expands horizontally rather than pushing the controls downward</li>
+        <li>make a better bot that reacts to the player's moves rather than always doing the same thing no matter what</li>
+      </ul>
+    </div>
+    <custom-footer data-title="Ultimate Tic Tac Toe"></custom-footer>
+  </body>
+</html>
